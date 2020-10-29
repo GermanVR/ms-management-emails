@@ -1,0 +1,22 @@
+#this property file will have to be loaded explicitly as this is not a Spring Boot project
+server:
+  port: 8086
+# Gmail SMTP
+  email:
+    host: smtp.gmail.com
+    port: 587
+    username: testing.email.wf1907@gmail.com
+    password: emailwf1907
+    smtp:
+      auth: true
+    starttls:
+      enable: true
+    transport:
+      protocol: smtp
+
+# Templates directory inside main/resources or absolute filesystem path 
+    templates:
+      path: classpath:/email-templates/
+      prefix: 
+      suffix: .ftl
+

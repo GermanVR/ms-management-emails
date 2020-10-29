@@ -1,0 +1,52 @@
+{"properties": [
+  {
+    "name": "server.email.host",
+    "type": "java.lang.String",
+    "description": "A description for 'server.email.host'"
+  },
+  {
+    "name": "server.email.port",
+    "type": "java.lang.String",
+    "description": "A description for 'server.email.port'"
+  },
+  {
+    "name": "server.email.username",
+    "type": "java.lang.String",
+    "description": "A description for 'server.email.username'"
+  },
+  {
+    "name": "server.email.password",
+    "type": "java.lang.String",
+    "description": "A description for 'server.email.password'"
+  },
+  {
+    "name": "server.email.smtp.auth",
+    "type": "java.lang.String",
+    "description": "A description for 'server.email.smtp.auth'"
+  },
+  {
+    "name": "server.email.starttls.enable",
+    "type": "java.lang.String",
+    "description": "A description for 'server.email.starttls.enable'"
+  },
+  {
+    "name": "server.email.transport.protocol",
+    "type": "java.lang.String",
+    "description": "A description for 'server.email.transport.protocol'"
+  },
+  {
+    "name": "server.email.templates.path",
+    "type": "java.lang.String",
+    "description": "A description for 'server.email.templates.path'"
+  },
+  {
+    "name": "server.email.templates.prefix",
+    "type": "java.lang.String",
+    "description": "A description for 'server.email.templates.prefix'"
+  },
+  {
+    "name": "server.email.templates.suffix",
+    "type": "java.lang.String",
+    "description": "A description for 'server.email.templates.suffix'"
+  }
+]}
