@@ -3,23 +3,23 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>ms-management-emails</artifactId>
+	<artifactId>ms-admin-emails-system</artifactId>
 	<version>1.0.0</version>
-	<name>ms-management-emails</name>
+	<name>ms-admin-emails-system</name>
 
 	<inceptionYear>2020</inceptionYear>
 
 	<organization>
-		<name>GermanVR</name>
-		<url>https://github.com/GermanVR?tab=repositories</url>
+		<name>actinver</name>
+		<url>https://www.actinver.com/</url>
 	</organization>
 
 	<developers>
 		<developer>
 			<id>lvazqure</id>
 			<name>German Vazquez Renteria</name>
-			<email>german_1241@hotmail.com</email>
-			<organization>Fenix</organization>
+			<email>lvazqure@everis.com</email>
+			<organization>Everis</organization>
 			<timezone>America/Mexico_City</timezone>
 			<roles>
 				<role>Solutions Architect</role>
@@ -38,13 +38,14 @@
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Finchley.SR1</spring-cloud.version>
 		<sonar.exclusions>
-			src/main/java/mx/com/german/ms/*Application.java,
+			src/main/java/mx/com/actinver/ms/*Application.java,
 		</sonar.exclusions>
 		<sonar.coverage.exclusions>
-			src/main/java/mx/com/german/ms/beans/**/*,
-			src/main/java/mx/com/german/ms/exceptions/**/*,
-			src/main/java/mx/com/german/ms/controllers/**/*,
-			src/main/java/mx/com/german/ms/configs/**/*
+			src/main/java/mx/com/actinver/ms/beans/**/*,
+			src/main/java/mx/com/actinver/ms/exceptions/**/*,
+			src/main/java/mx/com/actinver/ms/controllers/**/*,
+			src/main/java/mx/com/actinver/ms/clients/**/*,
+			src/main/java/mx/com/actinver/ms/helpers/**/*
 		</sonar.coverage.exclusions>
 		<spring.version>5.2.9.RELEASE</spring.version>
 
@@ -65,7 +66,20 @@
 	</properties>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>mx.com.actinver.ms</groupId>
+			<artifactId>ms-common-security-library</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>mx.com.actinver.ms</groupId>
+			<artifactId>ms-common-library</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -105,7 +119,7 @@
 
 		<!-- thymeleaf dependencies -->
 		<dependency>
-			<groupId>org.thymeleaf</groupId>
+			<groupId>org.thymeleaf</groupId>	
 			<artifactId>thymeleaf</artifactId>
 		</dependency>
 		<dependency>
@@ -164,6 +178,14 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.apache.tika</groupId> -->
+<!-- 			<artifactId>tika-core</artifactId> -->
+<!-- 			<version>1.24.1</version> -->
+<!-- 		</dependency> -->
+
 	</dependencies>
 
 	<dependencyManagement>
@@ -217,14 +239,15 @@
 		<repository>
 			<id>nexus-ci</id>
 			<name>Internal releases</name>
-			<url>http://nexus:8081/repository/release/</url>
+			<url>http://nexus-ci:8081/repository/REPO-ACT-RELEASE/</url>
 		</repository>
 
 		<snapshotRepository>
 			<id>nexus-ci</id>
 			<name>Internal snapshot releases</name>
-			<url>http://nexus:8081/repository/snapshot/</url>
+			<url>http://nexus-ci:8081/repository/REPO-ACT-SNAPSHOT/</url>
 		</snapshotRepository>
 	</distributionManagement>
+
 
 </project>

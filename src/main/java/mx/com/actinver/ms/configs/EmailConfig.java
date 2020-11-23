@@ -1,4 +1,4 @@
-package mx.com.german.ms.configs;
+package mx.com.actinver.ms.configs;
 
 import java.util.Properties;
 
@@ -9,11 +9,6 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 
-/**
- * @Autor Luis German Vazquez Renteria
- * @Proyecto: https://github.com/GermanVR/
- * @Correo: german_1241@hotmail.com
- */
 @Configuration
 public class EmailConfig {
 

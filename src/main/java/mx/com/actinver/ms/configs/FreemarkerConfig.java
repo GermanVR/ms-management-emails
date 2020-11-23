@@ -1,4 +1,4 @@
-package mx.com.german.ms.configs;
+package mx.com.actinver.ms.configs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -7,11 +7,6 @@ import org.springframework.core.env.Environment;
 import org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver;
 
-/**
- * @Autor Luis German Vazquez Renteria
- * @Proyecto: https://github.com/GermanVR/
- * @Correo: german_1241@hotmail.com
- */
 @Configuration
 public class FreemarkerConfig {
 

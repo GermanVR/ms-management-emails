@@ -1,3 +1,7 @@
+spring:
+   application:
+    name: @artifactId@
+    version: @project.version@
 #this property file will have to be loaded explicitly as this is not a Spring Boot project
 server:
   port: 8086
@@ -20,3 +24,16 @@ server:
       prefix: 
       suffix: .ftl
 
+application:
+  id: EMAILS
+  type: S
+  channel: admin
+  moduleOperation:
+   emails: /emails
+  baseUri: ${application.channel}${application.moduleOperation.emails}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

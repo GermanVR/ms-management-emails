@@ -1,1 +1,1 @@
-## ms-management-emails
+## ms-admin-emails-system

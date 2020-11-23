@@ -4,8 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   </head>
   <body>
-    <p>Hey ${recipientName}</p>
-    <p>${text}</p>
+    <p>Hola ${recipientName}</p>
+    <p>${body}</p>
     <p>¡Saludos!</p>
     <p>
       <em>Enviado desde Gmail</em> <br />

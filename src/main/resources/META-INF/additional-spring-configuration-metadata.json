@@ -48,5 +48,40 @@
     "name": "server.email.templates.suffix",
     "type": "java.lang.String",
     "description": "A description for 'server.email.templates.suffix'"
+  },
+  {
+    "name": "spring.application.version",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.application.version'"
+  },
+  {
+    "name": "application.id",
+    "type": "java.lang.String",
+    "description": "A description for 'application.id'"
+  },
+  {
+    "name": "application.type",
+    "type": "java.lang.String",
+    "description": "A description for 'application.type'"
+  },
+  {
+    "name": "application.channel",
+    "type": "java.lang.String",
+    "description": "A description for 'application.channel'"
+  },
+  {
+    "name": "application.moduleOperation.emails",
+    "type": "java.lang.String",
+    "description": "A description for 'application.moduleOperation.emails'"
+  },
+  {
+    "name": "application.moduleOperation.emails",
+    "type": "java.lang.String",
+    "description": "A description for 'application.moduleOperation.emails'"
+  },
+  {
+    "name": "application.baseUri",
+    "type": "java.lang.String",
+    "description": "A description for 'application.baseUri'"
   }
 ]}
